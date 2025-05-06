@@ -1,0 +1,356 @@
+@import "tailwindcss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-transform: capitalize;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+  background: linear-gradient(#2212d4, #6d28d9);
+  background-size: 400% 400%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #f3f4f6;
+  padding: 2rem 1rem;
+}
+
+#greeting {
+  font-size: 3rem;
+  color: #ffffff;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  font-weight: 800;
+  font-weight: 700;
+  background: -webkit-linear-gradient(#00158d, #17038a);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Preloader styles */
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, #0013c3, #3714ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  transition: opacity 0.5s ease;
+}
+
+/* main page styling */
+
+div.blur-box {
+  position: absolute;
+  opacity: 15%;
+  top: 0;
+  right: 50%;
+  background: #0000004f;
+  backdrop-filter: blur(8px);
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  box-shadow: inset 0px 0px 40px 40px #0901751c;
+  animation: float 6s ease-in-out infinite;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 21px 0px 0px 0px;
+  margin-bottom: 3rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+nav {
+  display: flex;
+  gap: 2rem;
+}
+
+nav a {
+  font-size: 1.1rem;
+  text-decoration: none;
+  color: #e2e8f0;
+  padding: 4px 8px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffffff;
+  background-color: rgba(167, 139, 250, 0.367);
+}
+
+.card {
+  width: 100%;
+  max-width: 72rem;
+  background-color: rgba(14, 18, 24, 0.95);
+  border-radius: 0.75rem;
+  padding: 2rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2.5rem;
+  position: relative;
+  min-height: 300px;
+  /* backdrop-filter: blur(10px); */
+}
+
+.card > p > .highlights {
+  background: linear-gradient(to bottom right, #000e8c, #3714ff);
+  font-weight: 700;
+  padding: 4px 4px 0px 4px;
+  color: yellow;
+}
+
+.card > p > .highlights-2 {
+  font-weight: 700;
+  background: -webkit-linear-gradient(#9da7ff, #3714ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card > h2 > span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #7c3aed;
+  background-color: #262626;
+  padding: 4px 4px 0px 4px;
+}
+
+.card > p {
+  word-spacing: 120%;
+  line-height: 110%;
+  width: 70%;
+  font-size: 1.125rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+}
+
+.card > p > .gpt-tag {
+  position: absolute;
+  right: 40%;
+  bottom: 20px;
+  color: #7c3aed;
+  font-weight: 700;
+}
+
+.card > div > img {
+  position: relative;
+  bottom: 10px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #5d5d5d;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.skill-tag {
+  background-color: #3714ff;
+  color: white;
+  border-radius: 20px;
+  padding: 0.3rem 0.6rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  background-color: rgba(55, 65, 81, 0.8);
+  border: 1px solid rgba(124, 58, 237, 0.2);
+  border-radius: 0.5rem;
+  color: #f3f4f6;
+  transition: all 0.3s ease;
+}
+
+textarea {
+  height: 150px;
+  resize: none;
+  overflow-y: auto;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #7c3aed;
+  background-color: rgba(55, 65, 81, 0.95);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #9ca3af;
+}
+
+button {
+  background-color: #3714ff;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #2306c5;
+  transform: translateY(-1px);
+}
+
+.social-links {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100px;
+  position: relative;
+  margin: 0px;
+  bottom: 0px;
+  gap: 2rem;
+
+  width: 100%;
+  max-width: 72rem;
+  background-color: rgba(14, 18, 24, 0.95);
+  border-radius: 0.75rem;
+  padding: 2rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.2);
+}
+
+.social-links a {
+  color: #e2e8f0;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.social-links a:hover {
+  color: #ffffff;
+  background-color: rgba(167, 139, 250, 0.1);
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (min-width: 768px) {
+  .card {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .card > p {
+    width: 70%;
+  }
+
+  .card > p > .gpt-tag {
+    position: absolute;
+    right: 40%;
+    bottom: 20px;
+  }
+
+  .card > div.img {
+    position: absolute;
+    right: -40px;
+    top: -20px;
+  }
+
+  .card > div > img {
+    position: relative;
+    right: auto;
+    top: auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    margin-top: 1rem;
+  }
+
+  .card {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card > p {
+    width: 100%;
+  }
+
+  .card > p > .gpt-tag {
+    position: relative;
+    left: 120px;
+    bottom: auto;
+    display: block;
+    margin-top: 1rem;
+  }
+
+  .card > div.img {
+    position: relative;
+    right: auto;
+    top: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  .card > div > img {
+    position: relative;
+    right: auto;
+    top: auto;
+  }
+
+  .skills-container {
+    justify-content: center;
+  }
+
+  .skill-tag {
+    margin: 0;
+  }
+
+  .social-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+  }
+}
