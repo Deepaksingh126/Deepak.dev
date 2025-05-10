@@ -11,10 +11,7 @@ const Tabby = () => {
       </div>
       <h3 className="w-[80%] font-bold text-3xl my-4 hover:text-blue-600 hover:border-b-1">Tabby</h3>
       <p className="w-[100px] inline-block text-gray-400 font-medium text-sm">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quas
-        odit enim ab fugit pariatur sunt provident, exercitationem consectetur,
-        quisquam magni, et illum quibusdam atque numquam magnam dolorem!
-        Dignissimos, enim.
+      This extension is designed primarily for developers to address the issue of frequent tab switching, which can slow down system performance, clutter the tab layout, and waste time searching for frequently visited websites.
       </p>
       <div className=" flex gap-3 items-center">
         <div className="rounded-3xl border-1 border-blue-400 font-bold py-1 px-2">
