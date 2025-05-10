@@ -5,8 +5,8 @@ const Footer = () => {
         <div className="social-links flex-col">
             <Link to="https://github.com/Deepaksingh126" target="_blank"><i className="fab fa-github"></i> GitHub</Link>
 
-            <div className="w-full flex justify-center items-center gap-10">
-                <p> Made with ❤️ by Deepak</p>
+            <div className="w-full flex flex-wrap justify-center items-center gap-1">
+                <p className="mx- "> Made with ❤️ by Deepak</p>
                 <p>© 2023 All rights reserved</p>
             </div>
 

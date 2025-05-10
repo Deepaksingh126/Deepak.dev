@@ -1,8 +1,6 @@
 import { useState, useEffect } from "react";
 import NavBar from "./components/NavBar";
-import MainCard from "./components/MainCard";
-import Skills from './components/Skills';
-import Message from "./components/Message";
+import MainCard from "./components/MainCard"; 
 import Footer from "./components/Footer";
 import { Route, Routes } from "react-router-dom";
 import Blogs from "./components/Blogs";
@@ -80,8 +78,6 @@ function App() {
             element={
               <>
                 <MainCard />
-                <Skills />
-                <Message />
               </>
             }
           />
