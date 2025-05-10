@@ -1,12 +1,11 @@
 @import "tailwindcss";
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
   text-transform: capitalize;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   scroll-behavior: smooth;
+  /* border:1px solid white; */
 }
 
 body {
@@ -151,7 +150,7 @@ nav a:hover {
   font-weight: 700;
 }
 
-.card > div > img {
+.card > div.img > img {
   position: relative;
   bottom: 10px;
   width: 200px;
