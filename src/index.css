@@ -5,7 +5,6 @@
   text-transform: capitalize;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   scroll-behavior: smooth;
-  /* border:1px solid white; */
 }
 
 body {
@@ -28,7 +27,6 @@ body {
   text-align: center;
   font-family: Helvetica, sans-serif;
   font-weight: 800;
-  font-weight: 700;
   background: -webkit-linear-gradient(#00158d, #17038a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -65,39 +63,21 @@ div.blur-box {
   animation: float 6s ease-in-out infinite;
 }
 
-header {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding: 21px 0px 0px 0px;
-  margin-bottom: 3rem;
-}
-
-h1 {
-  font-size: 2rem;
-  font-weight: bold;
-}
-
-nav {
-  display: flex;
-  gap: 2rem;
-}
-
-nav a {
+/* nav a {
   font-size: 1.1rem;
   text-decoration: none;
   color: #e2e8f0;
   padding: 4px 8px;
   border-radius: 8px;
   transition: all 0.3s ease;
-}
+} */
 
-nav a:hover {
+/* nav a:hover {
   color: #ffffff;
-  background-color: rgba(167, 139, 250, 0.367);
-}
+  background-color: #a78bfa5e;
+} */
 
+/* card styling */
 .card {
   width: 100%;
   max-width: 72rem;
@@ -110,21 +90,21 @@ nav a:hover {
   min-height: 300px;
 }
 
-.card>p>.highlights {
+.card > p > .highlights {
   background: linear-gradient(to bottom right, #000e8c, #3714ff);
   font-weight: 700;
   padding: 4px 4px 0px 4px;
   color: yellow;
 }
 
-.card>p>.highlights-2 {
+.card > p > .highlights-2 {
   font-weight: 700;
   background: -webkit-linear-gradient(#9da7ff, #3714ff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.card>h2>span {
+.card > h2 > span {
   font-size: 1.5rem;
   font-weight: bold;
   color: #7c3aed;
@@ -132,7 +112,7 @@ nav a:hover {
   padding: 4px 4px 0px 4px;
 }
 
-.card>p {
+.card > p {
   word-spacing: 120%;
   line-height: 110%;
   width: 70%;
@@ -141,7 +121,7 @@ nav a:hover {
   margin-bottom: 1rem;
 }
 
-.card>p>.gpt-tag {
+.card > p > .gpt-tag {
   position: absolute;
   right: 40%;
   bottom: 20px;
@@ -149,7 +129,7 @@ nav a:hover {
   font-weight: 700;
 }
 
-.card>div.img>img {
+.card > div.img > img {
   position: relative;
   bottom: 10px;
   width: 200px;
@@ -271,23 +251,23 @@ button:hover {
     gap: 2rem;
   }
 
-  .card>p {
+  .card > p {
     width: 70%;
   }
 
-  .card>p>.gpt-tag {
+  .card > p > .gpt-tag {
     position: absolute;
     right: 40%;
     bottom: 20px;
   }
 
-  .card>div.img {
+  .card > div.img {
     position: absolute;
     right: -40px;
     top: -20px;
   }
 
-  .card>div>img {
+  .card > div > img {
     position: relative;
     right: auto;
     top: auto;
@@ -310,11 +290,11 @@ button:hover {
     flex-direction: column;
   }
 
-  .card>p {
+  .card > p {
     width: 100%;
   }
 
-  .card>p>.gpt-tag {
+  .card > p > .gpt-tag {
     position: relative;
     left: 120px;
     bottom: auto;
@@ -322,7 +302,7 @@ button:hover {
     margin-top: 1rem;
   }
 
-  .card>div.img {
+  .card > div.img {
     position: relative;
     right: auto;
     top: auto;
@@ -332,7 +312,7 @@ button:hover {
     margin-top: 1rem;
   }
 
-  .card>div>img {
+  .card > div > img {
     position: relative;
     right: auto;
     top: auto;
